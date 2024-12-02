@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const carouselImages = document.querySelector('.carousel-images');
-    const prevBtn = document.querySelector('.carousel-btn.prev');
-    const nextBtn = document.querySelector('.carousel-btn.next');
     let currentIndex = 0;
     let carouselInterval;
 
@@ -53,12 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function avviaRotazioneAutomatica() {
         carouselInterval = setInterval(() => {
             navigaCarousel('next');
-        }, 10000); // 10 secondi
-    }
-
-    // Ferma rotazione automatica
-    function fermaRotazioneAutomatica() {
-        clearInterval(carouselInterval);
+        }, 7000); // 7 secondi
     }
 
     // Gestore form
@@ -78,19 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
     mostraImmagine(currentIndex);
     avviaRotazioneAutomatica();
 
-    // Event listener
-    nextBtn.addEventListener('click', () => {
-        fermaRotazioneAutomatica();
-        navigaCarousel('next');
-        avviaRotazioneAutomatica();
-    });
-    
-    prevBtn.addEventListener('click', () => {
-        fermaRotazioneAutomatica();
-        navigaCarousel('prev');
-        avviaRotazioneAutomatica();
-    });
-    
     const form = document.querySelector('form');
     form.addEventListener('submit', inviaRichiesta);
 });
