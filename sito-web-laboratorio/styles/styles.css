@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ff8c00; 
+    color: #1a1a1a;
+}
+
+nav {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#carousel {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-btn {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 60% 20%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    mask-image: 
+        linear-gradient(to right, 
+            transparent 0%, 
+            black 5%, 
+            black 95%, 
+            transparent 100%
+        ),
+        linear-gradient(to bottom, 
+            transparent 0%, 
+            black 10%, 
+            black 90%, 
+            transparent 100%
+        );
+    mask-composite: intersect;
+}
+
+#ticket-counter {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.dates-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.date-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tickets-percentage {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.acquista-btn {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Creepster', cursive;
+    letter-spacing: 2px;
+}
+
+#registration-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(250, 209, 155, 0.9);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; 
+    margin: 2rem 0;
+}
+
+.image-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#registration-form input, 
+.submit-btn {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.select-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#attivita-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: rgba(255, 235, 179, 0.9);
+    font-size: 1rem;
+}
+
+#attivita-select option {
+    padding: 10px;
+}
+
+.submit-btn {
+    background-color: #8b0000;
+    color: white;
+    border: 2px solid #400000;
+    font-family: 'Creepster', cursive;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#header-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.header-image-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.header-image-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3.2rem;
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0) 0%, rgb(75, 0, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
