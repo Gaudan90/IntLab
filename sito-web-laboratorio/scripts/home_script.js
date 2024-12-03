@@ -73,4 +73,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const form = document.querySelector("form");
   form.addEventListener("submit", inviaRichiesta);
+
+  //Animated Background
+  const backgroundcolors = [
+    "#d68015",
+    "#cf7313",
+    "#c96711",
+    "#c35b10",
+    "#bd4f0e",
+    "#b7420d",
+    "#b1360b",
+    "#ab2a0a",
+    "#a51e08",
+    "#9f1207",
+  ];
+  let currentColorIndex = 0;
+
+  function changeBackgroundColor() {
+    document.body.style.backgroundColor = backgroundcolors[currentColorIndex];
+    currentColorIndex = (currentColorIndex + 1) % backgroundcolors.length;
+  }
+
+  setInterval(changeBackgroundColor, 150);
+  changeBackgroundColor();
 });
