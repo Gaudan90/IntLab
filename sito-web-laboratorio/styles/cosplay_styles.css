@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap");
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #1a1a1a;
-    overflow-x: hidden;
-    position: relative;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #1a1a1a;
+  overflow-x: hidden;
+  position: relative;
 }
 
 body::before {
@@ -18,36 +18,27 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-      rgba(128, 0, 128, 0.7),
-      rgba(210, 90, 20, 0.7)
-  );
+  background: linear-gradient(rgba(128, 0, 128, 0.7), rgba(210, 90, 20, 0.7));
   z-index: -2;
   animation: mistyHalloweenBackground 10s infinite alternate;
 }
 
 @keyframes mistyHalloweenBackground {
-0% {
-    background: linear-gradient(
-        rgba(128, 0, 128, 0.7),
-        rgba(210, 90, 20, 0.9)
-    );
+  0% {
+    background: linear-gradient(rgba(128, 0, 128, 0.7), rgba(210, 90, 20, 0.9));
     opacity: 0.7;
-}
-50% {
-    background: linear-gradient(
-        rgba(75, 0, 130, 0.8),
-        rgba(190, 70, 10, 0.6)
-    );
+  }
+  50% {
+    background: linear-gradient(rgba(75, 0, 130, 0.8), rgba(190, 70, 10, 0.6));
     opacity: 0.8;
-}
-100% {
+  }
+  100% {
     background: linear-gradient(
-        rgba(110, 0, 140, 0.9),
-        rgba(230, 100, 30, 0.7)
+      rgba(110, 0, 140, 0.9),
+      rgba(230, 100, 30, 0.7)
     );
     opacity: 0.9;
-}
+  }
 }
 
 .cosplay-container {
@@ -62,7 +53,7 @@ body::before {
 }
 
 .cosplay-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
@@ -74,7 +65,7 @@ body::before {
 }
 
 .cosplay-content {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   color: #e0e0e0;
   line-height: 1.7;
   text-align: justify;
@@ -83,9 +74,13 @@ body::before {
 }
 
 .cosplay-content::first-letter {
-  font-family: 'Creepster', sans-serif;
+  font-family: "Creepster", sans-serif;
   font-size: 3em;
-  color: #ff0000;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 0, 0) 0%,
+    rgb(75, 0, 0) 100%
+  );
   float: left;
   margin-right: 10px;
   line-height: 0.8;
@@ -94,79 +89,79 @@ body::before {
 /* Rest of the CSS from the previous implementation, with some additions */
 
 .timeline {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: linear-gradient(135deg, #5c2680c2, #d87d15);
-    border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #5c2680c2, #d87d15);
+  border-radius: 10px;
 }
 
 .timeline-event {
-    font-family: 'Orbitron', sans-serif;
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: rgba(250, 209, 155, 0.9);
-    border-radius: 5px;
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: rgba(250, 209, 155, 0.9);
+  border-radius: 5px;
 }
 
 .download-programma {
-    display: block;
-    width: 200px;
-    margin: 20px auto;
-    padding: 10px;
-    text-align: center;
-    background-color: #8b0000;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #8b0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
 }
 
 .gallery-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .gallery-item img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .stand-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .stand {
-    font-family: 'Orbitron', sans-serif;
-    width: 300px;
-    margin: 15px;
-    padding: 20px;
-    background-color: rgba(250, 209, 155, 0.9);
-    border-radius: 10px;
-    text-align: center;
+  font-family: "Orbitron", sans-serif;
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  background-color: rgba(250, 209, 155, 0.9);
+  border-radius: 10px;
+  text-align: center;
 }
 
 #registrazione-cosplay form {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 #registrazione-cosplay input {
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
 }
 
 .submit-btn {
@@ -200,31 +195,27 @@ body::before {
 }
 
 #acquisto-biglietti {
-    text-align: center;
-    margin: 30px 0;
+  text-align: center;
+  margin: 30px 0;
 }
 
 .biglietto-cosplay {
-    background-color: rgba(250, 209, 155, 0.9);
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
+  background-color: rgba(250, 209, 155, 0.9);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .biglietto-cosplay p {
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   font-size: 2rem;
   text-align: center;
   color: #8b0000;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(
-      45deg, 
-      rgb(255, 140, 0),
-      rgb(139, 0, 0)
-  );
+  background: linear-gradient(45deg, rgb(255, 140, 0), rgb(139, 0, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -247,10 +238,10 @@ body::before {
   padding: 15px;
   text-align: center;
   background: linear-gradient(
-      135deg, 
-      rgb(128, 0, 128) 0%, 
-      rgb(255, 140, 0) 50%, 
-      rgb(139, 0, 0) 100%
+    135deg,
+    rgb(128, 0, 128) 0%,
+    rgb(255, 140, 0) 50%,
+    rgb(139, 0, 0) 100%
   );
   color: white;
   text-decoration: none;
@@ -267,17 +258,17 @@ body::before {
 }
 
 .acquista-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
   background: linear-gradient(
-      120deg,
-      transparent,
-      rgba(255, 255, 255, 0.3),
-      transparent
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
   );
   transition: all 0.5s ease;
 }
@@ -386,86 +377,85 @@ nav ul li a.active {
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
-    nav ul {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    nav ul li {
-      margin: 5px;
-      width: auto;
-    }
-  
-    .dropdown-content {
-      position: static;
-      background-color: transparent;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      opacity: 1;
-      padding: 5px;
-    }
-  
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  
-    .dropdown-content a {
-      margin: 0 10px;
-      padding: 5px 10px;
-      font-size: 0.9rem;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 3px;
-    }
-  }
-  
-  @media (hover: hover) {
-    nav ul li:hover > a,
-    nav ul li a:hover {
-      color: rgb(255, 0, 0);
-      transform: scale(1.1);
-    }
-  }
-  
-  h1 {
-    font-family: "Creepster", cursive;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 3.2rem;
-    background-image: linear-gradient(
-      to bottom,
-      rgb(255, 0, 0) 0%,
-      rgb(75, 0, 0) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
-  h2 {
-    font-family: "Creepster", cursive;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 1.7rem;
-    background-image: linear-gradient(
-      to bottom,
-      rgb(68, 1, 88) 0%,
-      rgb(17, 0, 32) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+  nav ul li {
+    margin: 5px;
+    width: auto;
   }
 
-
-  * {
-    user-select: all;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
+  .dropdown-content {
+    position: static;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    opacity: 1;
+    padding: 5px;
   }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+  }
+}
+
+@media (hover: hover) {
+  nav ul li:hover > a,
+  nav ul li a:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.1);
+  }
+}
+
+h1 {
+  font-family: "Creepster", cursive;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 3.2rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 0, 0) 0%,
+    rgb(75, 0, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  font-family: "Creepster", cursive;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(68, 1, 88) 0%,
+    rgb(17, 0, 32) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+* {
+  user-select: all;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
