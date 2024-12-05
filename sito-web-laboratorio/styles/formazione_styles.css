@@ -1,19 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #ff8c00;
   color: #1a1a1a;
   overflow-x: hidden;
 }
-h2 {
-  font-family: "Creepster", cursive;
-  color: #800080;
-  text-align: center;
-  margin: 20px 0;
-  font-size: 4em;
-  text-shadow: 2px 2px 10px rgba(128, 0, 128, 0.7);
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(128, 0, 128, 0.7), rgba(210, 90, 20, 0.7));
+  z-index: -2;
+  animation: mistyHalloweenBackground 10s infinite alternate;
+}
+
+@keyframes mistyHalloweenBackground {
+  0% {
+    background: linear-gradient(rgba(128, 0, 128, 0.7), rgba(210, 90, 20, 0.9));
+    opacity: 0.7;
+  }
+  50% {
+    background: linear-gradient(rgba(75, 0, 130, 0.8), rgba(190, 70, 10, 0.6));
+    opacity: 0.8;
+  }
+  100% {
+    background: linear-gradient(
+      rgba(110, 0, 140, 0.9),
+      rgba(230, 100, 30, 0.7)
+    );
+    opacity: 0.9;
+  }
 }
 
 .activity-card p {
@@ -64,31 +87,7 @@ nav ul li a {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-#event_map {
-  width: 1000px;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  -webkit-mask-image: radial-gradient(
-    circle,
-    rgb(135, 5, 5) 60%,
-    rgba(185, 14, 14, 0) 100%
-  );
-  mask-image: radial-gradient(
-    circle,
-    rgb(129, 40, 40) 60%,
-    rgba(76, 9, 9, 0) 100%
-  );
 
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-
-  -webkit-mask-position: center;
-  mask-position: center;
-
-  -webkit-mask-size: cover;
-  mask-size: cover;
-}
 .dropdown {
   padding: 10px;
 }
@@ -128,4 +127,51 @@ nav ul li a.active {
   background-color: transparent;
   color: rgb(255, 0, 0);
   transform: scale(1.1);
+}
+
+h1 {
+  font-family: "Creepster", cursive;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 3.2rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 0, 0) 0%,
+    rgb(75, 0, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  font-family: "Creepster", cursive;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(68, 1, 88) 0%,
+    rgb(17, 0, 32) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #5c2680c2, #d87d15);
+  border-radius: 10px;
+}
+
+.timeline-event {
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: rgba(250, 209, 155, 0.9);
+  border-radius: 5px;
 }
