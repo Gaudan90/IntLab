@@ -1,4 +1,5 @@
 /* Existing styles with modifications */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -54,6 +55,7 @@ nav ul li a {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+/* Map_Gamescon Style */
 #event_map {
   width: 1000px;
   height: auto;
@@ -371,6 +373,10 @@ nav ul li a.active {
   nav ul li a:hover {
     color: rgb(255, 0, 0);
     transform: scale(1.1);
+  }
+
+  #event_map {
+    width: 50%;
   }
 }
 
