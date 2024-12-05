@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #1a1a1a;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(128, 0, 128, 0.7), rgba(210, 90, 20, 0.7));
+    z-index: -2;
+    animation: mistyHalloweenBackground 10s infinite alternate;
+}
+
+@keyframes mistyHalloweenBackground {
+    0% { background: linear-gradient(rgba(128, 0, 128, 0.7), rgba(210, 90, 20, 0.9)); opacity: 0.7; }
+    50% { background: linear-gradient(rgba(75, 0, 130, 0.8), rgba(190, 70, 10, 0.6)); opacity: 0.8; }
+    100% { background: linear-gradient(rgba(110, 0, 140, 0.9), rgba(230, 100, 30, 0.7)); opacity: 0.9; }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3.2rem;
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0) 0%, rgb(75, 0, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+h2, p {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.descrizione-area {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #5c2680c2, #d87d15);
+    padding: 30px;
+    border-radius: 15px;
+    color: #e0e0e0;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.bottoni-principali {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn-scopri {
+    background: linear-gradient(135deg, purple, orange);
+    color: white;
+}
+
+.btn-prenota {
+    background: linear-gradient(135deg, orange, red);
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.temi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.temi-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.temi-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.temi-item:hover img {
+    transform: scale(1.1);
+}
+
+.espositori-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.espositore {
+    background: rgba(250, 209, 155, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contatta-box {
+    background: linear-gradient(135deg, purple, orange);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.btn-contatta {
+    background: linear-gradient(45deg, red, purple);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.btn-contatta:hover {
+    transform: scale(1.05);
+}
