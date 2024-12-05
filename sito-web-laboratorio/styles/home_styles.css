@@ -37,51 +37,7 @@ body::before {
     opacity: 0.9;
   }
 }
-/* Responsive Navigation */
-header {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: #3e4e21;
-}
 
-nav {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 1rem;
-  width: 100%;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-nav ul li:hover .dropdown-content,
-nav ul li:focus-within .dropdown-content,
-nav ul li:active .dropdown-content {
-  display: flex;
-  flex-direction: row;
-  opacity: 1;
-}
-
-nav ul li a {
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
 /* Map_Gamescon Style */
 #event_map {
   width: 1000px;
