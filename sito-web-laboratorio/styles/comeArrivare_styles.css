@@ -19,3 +19,15 @@ body::before {
   z-index: -2;
   animation: mistyHalloweenBackground 10s infinite alternate;
 }
+
+#mappaEvento {
+  display: block;
+  height: 600px;
+  width: 550px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
