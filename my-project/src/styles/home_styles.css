@@ -1,0 +1,63 @@
+/* Mantieni gli stili personalizzati non coperti da DaisyUI */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: hsl(var(--n)); /* Colore neutro di DaisyUI */
+  background: linear-gradient(
+    rgba(var(--a), 0.7), 
+    rgba(var(--s), 0.7)
+  );
+}
+
+/* Classi personalizzate per i dropdown */
+.dropdown-custom > .dropdown-content {
+  @apply hidden absolute bg-base-100 min-w-[200px] shadow-xl z-10 top-full left-0 rounded-box;
+}
+
+.dropdown-custom:hover > .dropdown-content {
+  @apply block;
+}
+
+.dropdown-custom .dropdown > .dropdown-content {
+  @apply left-full top-0;
+}
+
+/* Resto degli stili rimane invariato */
+.carousel-images {
+  @apply carousel carousel-center w-full p-4 space-x-4 bg-neutral rounded-box;
+}
+
+.carousel-images img {
+  @apply carousel-item w-full h-[500px] object-cover rounded-box;
+}
+
+#registration-form {
+  @apply card bg-base-100 shadow-xl p-6 max-w-md mx-auto;
+}
+
+.submit-btn {
+  @apply btn btn-primary btn-block font-creepster uppercase tracking-wider;
+}
+
+#attivita-select {
+  @apply select select-bordered w-full;
+}
+
+.section {
+  @apply container mx-auto px-4 py-8;
+}
+
+.dates-container {
+  @apply flex flex-wrap justify-center gap-4;
+}
+
+.date-circle {
+  @apply card bg-base-100 shadow-xl w-48 h-48 flex items-center justify-center text-center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dropdown-content {
+    @apply flex flex-col items-center bg-base-100 rounded-box p-2;
+  }
+}

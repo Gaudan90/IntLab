@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamescon Torino</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col h-full bg-base-200" data-theme="halloween">
+    <nav class="navbar bg-base-100 shadow-lg sticky top-0 z-50">
+        <div class="navbar-center">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    Menu
+                </div>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown dropdown-right relative">
+                    <div tabindex="0" class="btn btn-ghost">Info</div>
+                    <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box absolute left-full top-0 hidden">
+                        <li><a href="come-arrivare.html">Come Arrivare</a></li>
+                        <li><a href="accessibilita.html">Accessibilità</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-right relative">
+                    <div tabindex="0" class="btn btn-ghost">Aree</div>
+                    <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box absolute left-full top-0 hidden">
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="cosplay.html">Cosplay</a></li>
+                        <li><a href="conference.html">Conference</a></li>
+                        <li><a href="area-commerciale.html">Area Commerciale</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-right relative">
+                    <div tabindex="0" class="btn btn-ghost">Attività</div>
+                    <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box absolute left-full top-0 hidden">
+                        <li><a href="formazione-developers.html">Formazione Developers</a></li>
+                        <li><a href="videogames-tabletop.html">Videogames & Tabletop</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="text-center">
+            <h1 class="text-4xl font-creepster mb-8 text-primary">Gamescon Torino</h1>
+            
+            <div class="flex flex-wrap justify-center items-center space-x-4 mb-8">
+                <div class="flex flex-col items-center justify-center w-40 h-40 bg-base-100 rounded-full shadow-xl p-4 mx-2 transform transition-all hover:scale-105">
+                    <h3 class="text-2xl font-bold text-primary">30.10</h3>
+                    <div class="text-4xl font-bold text-secondary my-2">50%</div>
+                    <button class="btn btn-primary btn-sm">Acquista</button>
+                </div>
+                <div class="flex flex-col items-center justify-center w-40 h-40 bg-base-100 rounded-full shadow-xl p-4 mx-2 transform transition-all hover:scale-105">
+                    <h3 class="text-2xl font-bold text-primary">31.10</h3>
+                    <div class="text-4xl font-bold text-secondary my-2">75%</div>
+                    <button class="btn btn-primary btn-sm">Acquista</button>
+                </div>
+                <div class="flex flex-col items-center justify-center w-40 h-40 bg-base-100 rounded-full shadow-xl p-4 mx-2 transform transition-all hover:scale-105">
+                    <h3 class="text-2xl font-bold text-primary">01.11</h3>
+                    <div class="text-4xl font-bold text-secondary my-2">25%</div>
+                    <button class="btn btn-primary btn-sm">Acquista</button>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 max-w-md mx-auto shadow-xl p-6">
+                <h2 class="text-2xl font-creepster mb-4">Prenota il tuo Biglietto</h2>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Nome" class="input input-bordered w-full" required>
+                    <input type="email" placeholder="Email" class="input input-bordered w-full" required>
+                    <select class="select select-bordered w-full">
+                        <option disabled selected>Seleziona Attività</option>
+                        <option>Realtà Virtuale</option>
+                        <option>Giochi da Tavolo</option>
+                        <option>Formazione Sviluppatori</option>
+                    </select>
+                    <button class="btn btn-primary btn-block">Invia Richiesta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-base-100 p-4 flex justify-center items-center space-x-4">
+        <a href="#facebook" class="hover:bg-gray-200 rounded-full p-2 max-w-[48px] max-h-[48px]">
+            <img src="../assets/icon_facebook.svg" alt="Facebook" class="w-full h-full object-contain">
+        </a>
+        <a href="#instagram" class="hover:bg-gray-200 rounded-full p-2 max-w-[48px] max-h-[48px]">
+            <img src="../assets/icon_instagram.svg" alt="Instagram" class="w-full h-full object-contain">
+        </a>
+        <a href="#tiktok" class="hover:bg-gray-200 rounded-full p-2 max-w-[48px] max-h-[48px]">
+            <img src="../assets/icon_tiktok.svg" alt="TikTok" class="w-full h-full object-contain">
+        </a>
+    </footer>
+</body>
+</html>

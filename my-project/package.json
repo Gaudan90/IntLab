@@ -1,0 +1,25 @@
+{
+  "name": "gamescon-torino",
+  "version": "1.0.0",
+  "main": "home.html",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^3.9.4",
+    "postcss": "^8.4.49",
+    "serve": "^14.2.1",
+    "tailwindcss": "^3.4.16"
+  },
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/styles/home_styles.css -o ./styles/styles.css",
+    "watch:css": "npx tailwindcss -i ./src/styles/home_styles.css -o ./styles/styles.css --watch",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "gamescon",
+    "evento",
+    "halloween"
+  ],
+  "author": "Bubu",
+  "license": "ISC",
+  "description": ""
+}
