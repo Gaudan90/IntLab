@@ -1,7 +1,10 @@
 /* Existing styles with modifications */
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Jolly Lodger', cursive;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -15,28 +18,11 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(128, 0, 128, 0.7), rgba(210, 90, 20, 0.7));
+  background: linear-gradient(rgb(12, 12, 12), rgba(30, 30, 30));
   z-index: -2;
-  animation: mistyHalloweenBackground 10s infinite alternate;
+  animation: mistyHalloweenBackground 10s infinite alternate ease-in-out 0.3s;
 }
 
-@keyframes mistyHalloweenBackground {
-  0% {
-    background: linear-gradient(rgba(128, 0, 128, 0.7), rgba(210, 90, 20, 0.9));
-    opacity: 0.7;
-  }
-  50% {
-    background: linear-gradient(rgba(75, 0, 130, 0.8), rgba(190, 70, 10, 0.6));
-    opacity: 0.8;
-  }
-  100% {
-    background: linear-gradient(
-      rgba(110, 0, 140, 0.9),
-      rgba(230, 100, 30, 0.7)
-    );
-    opacity: 0.9;
-  }
-}
 
 /* Map_Gamescon Style */
 #event_map {
@@ -99,6 +85,10 @@ body::before {
 
 .dropdown-content a:hover {
   background-color: transparent;
+}
+
+nav {
+  font-family: 'Eater', cursive;
 }
 
 nav ul li a:hover,
@@ -168,8 +158,8 @@ nav ul li a.active {
 }
 
 .date-circle {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   border: 3px solid black;
   display: flex;
@@ -201,8 +191,59 @@ nav ul li a.active {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  font-family: "Creepster", cursive;
-  letter-spacing: 2px;
+  font-family: "Nosifer", cursive;
+  letter-spacing: 1px;
+  
+}
+
+.acquista-btn {
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  background: #ff4500;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  font-family: "Nosifer", cursive;
+}
+
+.acquista-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: all 0.5s ease;
+}
+
+.acquista-btn:hover::before {
+  left: 100%;
+}
+
+.acquista-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.acquista-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #registration-form {
@@ -210,7 +251,7 @@ nav ul li a.active {
   max-width: 400px;
   margin: 1rem auto;
   padding: 1rem;
-  background-color: rgba(250, 209, 155, 0.9);
+  background-color: #64727a;
   border-radius: 10px;
 }
 
@@ -268,7 +309,7 @@ nav ul li a.active {
   padding: 10px;
   border: 1px solid #333;
   border-radius: 5px;
-  background-color: rgba(255, 235, 179, 0.9);
+  background-color: rgb(157, 166, 166);
   font-size: 1rem;
 }
 
@@ -280,11 +321,23 @@ nav ul li a.active {
   background-color: #8b0000;
   color: white;
   border: 2px solid #400000;
-  font-family: "Creepster", cursive;
+  font-family: "Nosifer", cursive;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+.submit-btn:hover {
+  background-color: #6b0000;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #header-image {
@@ -347,7 +400,7 @@ nav ul li a.active {
   }
 
   .date-circle {
-    margin-bottom: 1rem;
+    margin-bottom: rem;
   }
 }
 
@@ -364,19 +417,30 @@ nav ul li a.active {
 }
 
 h1 {
-  font-family: "Creepster", cursive;
+  font-family: "Nosifer", cursive;
   text-align: center;
   letter-spacing: 2px;
   font-size: 3.2rem;
   background-image: linear-gradient(
     to bottom,
-    rgb(255, 0, 0) 0%,
+    rgb(156, 0, 0) 0%,
     rgb(75, 0, 0) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+h2 {
+  font-family: 'Eater', cursive;
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+hr {
+  border: solid #485257;
+  border-radius: 5px;
 }
 
 * {
