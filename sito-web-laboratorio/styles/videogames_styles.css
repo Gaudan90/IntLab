@@ -130,14 +130,7 @@ h1 {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  background: linear-gradient(
-    to bottom,
-    rgba(102, 51, 153, 0.8),
-    rgba(255, 140, 0, 0.8)
-  ); /* Sfumatura viola-arancione trasparente */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  background: linear-gradient(to bottom, #64727a);
 }
 
 .activity-section h2 {
@@ -154,8 +147,8 @@ h1 {
 }
 
 .activity-card {
-  background-color: #1e1e2e;
-  border: 2px solid #ffa31a;
+  background-color: #64727a;
+  border: 2px solid #64727a;
   border-radius: 10px;
   padding: 15px;
   width: 250px;

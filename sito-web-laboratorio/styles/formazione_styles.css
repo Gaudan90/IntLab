@@ -126,7 +126,7 @@ h2 {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background: linear-gradient(135deg, #5c2680c2, #d87d15);
+  background: linear-gradient(135deg, #64727a);
   border-radius: 10px;
 }
 
@@ -134,6 +134,6 @@ h2 {
   font-family: "Orbitron", sans-serif;
   margin-bottom: 20px;
   padding: 15px;
-  background-color: rgba(250, 209, 155, 0.9);
+  background-color: #64727a;
   border-radius: 5px;
 }
