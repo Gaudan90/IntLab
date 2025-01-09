@@ -5,7 +5,7 @@
   max-width: 800px;
   margin: 40px auto;
   padding: 30px;
-  background: linear-gradient(135deg, #5c2680c2, #d87d15);
+  background-color: #64727a;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -25,7 +25,7 @@
 }
 
 .cosplay-content {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Unkempt", sans-serif;
   color: #e0e0e0;
   line-height: 1.7;
   text-align: justify;
@@ -36,11 +36,7 @@
 .cosplay-content::first-letter {
   font-family: "Creepster", sans-serif;
   font-size: 3em;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(255, 0, 0) 0%,
-    rgb(75, 0, 0) 100%
-  );
+  background-image: linear-gradient(to bottom);
   float: left;
   margin-right: 10px;
   line-height: 0.8;
@@ -52,7 +48,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background: linear-gradient(135deg, #5c2680c2, #d87d15);
+  background-color: #64727a;
   border-radius: 10px;
 }
 
@@ -60,7 +56,7 @@
   font-family: "Orbitron", sans-serif;
   margin-bottom: 20px;
   padding: 15px;
-  background-color: rgba(250, 209, 155, 0.9);
+  background-color: #c4c8ca;
   border-radius: 5px;
 }
 
@@ -70,7 +66,7 @@
   margin: 20px auto;
   padding: 10px;
   text-align: center;
-  background-color: #8b0000;
+  background-color: #ff4500;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -105,7 +101,7 @@
   width: 300px;
   margin: 15px;
   padding: 20px;
-  background-color: rgba(250, 209, 155, 0.9);
+  background-color: #c4c8ca;
   border-radius: 10px;
   text-align: center;
 }
@@ -130,7 +126,7 @@
   margin: 20px auto;
   padding: 10px;
   text-align: center;
-  background-color: #8b0000;
+  background-color: #ff4500;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -144,7 +140,7 @@
 }
 
 .submit-btn:hover {
-  background-color: #6b0000;
+  background-color: #e24107;
   transform: translateY(-3px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
@@ -160,7 +156,7 @@
 }
 
 .biglietto-cosplay {
-  background-color: rgba(250, 209, 155, 0.9);
+  background-color: #c4c8ca;
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -175,14 +171,14 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(45deg, rgb(255, 140, 0), rgb(139, 0, 0));
+  background: purple;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   padding: 10px;
   margin-bottom: 15px;
-  border-bottom: 3px solid rgba(139, 0, 0, 0.5);
+  border-bottom: 3px solid rgba(128, 0, 128, 0.5);
   transition: all 0.3s ease;
 }
 
@@ -197,12 +193,7 @@
   margin: 20px auto;
   padding: 15px;
   text-align: center;
-  background: linear-gradient(
-    135deg,
-    rgb(128, 0, 128) 0%,
-    rgb(255, 140, 0) 50%,
-    rgb(139, 0, 0) 100%
-  );
+  background: #ff4500;
   color: white;
   text-decoration: none;
   border-radius: 10px;

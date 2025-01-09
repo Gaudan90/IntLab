@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>GamesCon - Area Games</title>
+    <link rel="stylesheet" href="../styles/games_styles.css" />
+    <link rel="stylesheet" href="../styles/bottombar_styles.css" />
+    <link rel="stylesheet" href="../styles/navbar_style.css" />
+    <link rel="stylesheet" href="../styles/theme_style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eater&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/icon_gamescon.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="#">Home</a>
+            <div class="dropdown-content">
+              <a href="home.html">Home</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#info">Info</a>
+            <div class="dropdown-content">
+              <a href="comeArrivare.html">Come arrivare</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#aree">Aree</a>
+            <div class="dropdown-content">
+              <a href="games.html">Games</a>
+              <a href="cosplay.html">Cosplay</a>
+              <a href="conference.html">Conference</a>
+              <a href="areacommerciale.html">Area Commerciale</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#attivita">Attività</a>
+            <div class="dropdown-content">
+              <a href="./formazione_dev.html">Formazione Developers</a>
+              <a href="videogames.html">Videogames & Tabletop</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#social">Contatti</a>
+            <div class="dropdown-content">
+              <a href="contatti.html">Contatti</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="featured-game">
+        <div class="game-spotlight">
+          <h2>GIOCO IN EVIDENZA</h2>
+          <div class="featured-content">
+            <div class="game-info">
+              <h3>Racoonie: Legends of the Spirits</h3>
+              <p class="studio">by Dramatic Iceberg</p>
+              <p class="description">
+                Un’allegra avventura su di un procione magico alla ricerca dei
+                grandi spiriti!
+              </p>
+              <div class="game-details">
+                <div class="detail">Genere: Avventura, Puzzles</div>
+                <div class="detail">Piattaforme: PC</div>
+                <div class="detail">Release: 2024</div>
+              </div>
+            </div>
+            <div class="game-preview">
+              <img
+                src="https://th.bing.com/th/id/OIP.3huMpMNjiR-3erV__By7kAHaEP?pid=ImgDet&w=474&h=271&rs=1"
+                alt="Racoonie: Legends of the Spirits"
+                class="game-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-text">Racoonie: Legends of the Spirits</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="developer-spotlight">
+        <div class="developer-container">
+          <div class="developer-card">
+            <h2>IGDA - International Game Developers Association</h2>
+            <p>
+              L'IGDA è presente al GamesCon per supportare gli sviluppatori
+              emergenti e promuovere l'eccellenza nel game development. Durante
+              l'evento, i rappresentanti IGDA saranno disponibili per:
+            </p>
+            <ul>
+              <li>Consulenze sulla carriera nel gaming</li>
+              <li>Workshop sulle best practices</li>
+              <li>Networking con professionisti del settore</li>
+              <li>Presentazione delle opportunità di membership</li>
+            </ul>
+          </div>
+
+          <div class="developer-card">
+            <h2>Dramatic Iceberg</h2>
+            <p>
+              Studio di sviluppo indipendente che ha conquistato l'attenzione
+              del pubblico con le sue innovative creazioni. Al GamesCon
+              presenteranno:
+            </p>
+            <ul>
+              <li>Demo giocabile di "Racoonie: Legends of the Spirits"</li>
+              <li>Incontri con il team di sviluppo</li>
+              <li>Sessioni di Q&A sulla creazione del gioco</li>
+              <li>Merchandise esclusivo dell'evento</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule">
+        <h2>PROGRAMMA INCONTRI</h2>
+        <div class="schedule-grid">
+          <div class="schedule-item">
+            <div class="time">11:00 - 12:30</div>
+            <div class="event-info">
+              <h3>Presentazione IGDA</h3>
+              <p>Scopri le opportunità per gli sviluppatori emergenti</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="time">14:00 - 15:30</div>
+            <div class="event-info">
+              <h3>Demo Racoonie</h3>
+              <p>Prova in anteprima il nuovo titolo di Dramatic Iceberg</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="time">16:00 - 17:30</div>
+            <div class="event-info">
+              <h3>Meet & Greet</h3>
+              <p>Incontra il team di sviluppo di Dramatic Iceberg</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="registration">
+        <div class="registration-container">
+          <h2>PRENOTA LA TUA SESSIONE DI GIOCO</h2>
+          <form id="game-session-form">
+            <input type="text" placeholder="Nome e Cognome" required />
+            <input type="email" placeholder="Email" required />
+            <select required>
+              <option value="">Seleziona l'orario</option>
+              <option>14:00 - 14:30</option>
+              <option>14:30 - 15:00</option>
+              <option>15:00 - 15:30</option>
+            </select>
+            <button type="submit" class="submit-btn">PRENOTA SESSIONE</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <li class="dropdown">
+        <div>
+          <a href="#facebook" target="_blank"
+            ><img class="social" src="../assets/icon_facebook.svg"
+          /></a>
+          <a
+            href="https://www.instagram.com/gamescontorino?igsh=dWdqOWtkMjJscTE5&utm_source=qr"
+            target="_blank"
+            ><img class="social" src="../assets/icon_instagram.svg"
+          /></a>
+          <a
+            href="https://www.tiktok.com/@gamescon.torino?_t=8rxtLYAN9Ms&_r=1"
+            target="_blank"
+            ><img class="social" src="../assets/icon_tiktok.svg" />
+          </a>
+        </div>
+      </li>
+    </footer>
+
+    <script src="../scripts/games_script.js"></script>
+    <script src="../scripts/navbar_scripts.js"></script>
+  </body>
+</html>
