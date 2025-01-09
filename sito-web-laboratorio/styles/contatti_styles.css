@@ -1,6 +1,6 @@
-body {
-  color: aliceblue;
-}
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
 #registration-form {
   width: 90%;
   max-width: 400px;

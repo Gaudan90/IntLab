@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #1a1a1a;
+  color: #1a1a1a;
   overflow-x: hidden;
 }
 body::before {
