@@ -1,0 +1,212 @@
+.game-spotlight {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    border: 2px solid #8b0000;
+}
+
+.game-spotlight h2 {
+    font-family: 'Nosifer', cursive;
+    color: #ff4500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.featured-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.game-info {
+    flex: 1;
+    color: #fff;
+}
+
+.game-info h3 {
+    font-family: 'Eater', cursive;
+    font-size: 1.8em;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.studio {
+    color: #ff4500;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.game-details {
+    margin-top: 20px;
+}
+
+.detail {
+    background-color: rgba(139, 0, 0, 0.3);
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.game-preview {
+    flex: 1;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #8b0000;
+    background-color: rgba(139, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.game-preview:hover {
+    transform: scale(1.02);
+}
+
+.game-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(139, 0, 0, 0.7)
+    );
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.game-preview:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: #fff;
+    font-family: 'Eater', cursive;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.placeholder-text {
+    color: #ff4500;
+    font-family: 'Eater', cursive;
+    text-align: center;
+}
+
+.developer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.developer-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #8b0000;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+}
+
+.developer-card h2 {
+    font-family: 'Nosifer', cursive;
+    color: #ff4500;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.developer-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.developer-card li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.developer-card li:before {
+    content: '🎮';
+    position: absolute;
+    left: 0;
+}
+
+.schedule-grid {
+    display: grid;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.schedule-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #8b0000;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+
+.time {
+    font-family: 'Eater', cursive;
+    color: #ff4500;
+    font-size: 1.2em;
+    min-width: 150px;
+}
+
+.registration-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 2px solid #8b0000;
+}
+
+#game-session-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#game-session-form input,
+#game-session-form select {
+    padding: 12px;
+    border: 1px solid #8b0000;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 768px) {
+    .featured-content {
+        flex-direction: column;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .time {
+        margin-bottom: 10px;
+    }
+}
