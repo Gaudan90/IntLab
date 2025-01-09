@@ -1,57 +1,29 @@
 body {
   color: aliceblue;
-}
-#registration-form {
-  width: 90%;
-  max-width: 400px;
-  margin: 1rem auto;
-  padding: 1rem;
-  background-color: rgba(250, 209, 155, 0.9);
-  border-radius: 10px;
+  align-items: center;
+  text-align: center;
 }
 
-#registration-form .form-group {
-  margin-bottom: 10px;
-}
-
-#registration-form input,
-#registration-form select {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-  box-sizing: border-box;
-  font-size: 0.9rem;
-}
-
-.registration-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-#registration-form input,
-.submit-btn {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-}
-
-.select-wrapper {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.activity-card p {
-  font-size: 1em;
-  color: #ddd;
-}
-header {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: #3e4e21;
-}
 #event_map {
   width: 50%;
+}
+
+.main-title .title {
+  color: #ffa31a;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center; /* Colore per il primo titolo */
+}
+
+.date {
+  color: #ffa31a;
+  font-size: 1.5rem; /* Colore per le date */
+}
+
+.email {
+  color: #ffa31a;
+  font-size: 1.5rem; /* Colore per l'email */
+}
+p {
+  font-size: 1.5rem;
 }
