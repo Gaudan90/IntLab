@@ -4,8 +4,6 @@ body {
   text-align: center;
 }
 
-<<<<<<< Updated upstream
-=======
 #registration-form .form-group {
   margin-bottom: 10px;
 }
@@ -33,6 +31,11 @@ body {
   padding: 10px;
 }
 
+h1,
+p {
+  font-family: "Unkempt", cursive;
+}
+
 p {
   color: aliceblue;
 }
@@ -52,7 +55,6 @@ header {
   z-index: 100;
   background-color: #3e4e21;
 }
->>>>>>> Stashed changes
 #event_map {
   width: 50%;
 }

@@ -34,7 +34,7 @@
 }
 
 .cosplay-content::first-letter {
-  font-family: "Creepster", sans-serif;
+  font-family: "Unkempt", sans-serif;
   font-size: 3em;
   background-image: linear-gradient(to bottom);
   float: left;
@@ -53,7 +53,7 @@
 }
 
 .timeline-event {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Unkempt", sans-serif;
   margin-bottom: 20px;
   padding: 15px;
   background-color: #c4c8ca;
@@ -97,7 +97,7 @@
 }
 
 .stand {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Unkempt", sans-serif;
   width: 300px;
   margin: 15px;
   padding: 20px;
@@ -164,7 +164,7 @@
 }
 
 .biglietto-cosplay p {
-  font-family: "Creepster", cursive;
+  font-family: "Fredroka", cursive;
   font-size: 2rem;
   text-align: center;
   color: #8b0000;
@@ -239,7 +239,7 @@
 }
 
 h1 {
-  font-family: "Creepster", cursive;
+  font-family: "Unkempt", cursive;
   text-align: center;
   letter-spacing: 2px;
   font-size: 3.2rem;
@@ -255,7 +255,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Creepster", cursive;
+  font-family: "Unkempt", cursive;
   text-align: center;
   letter-spacing: 2px;
   font-size: 1.7rem;
