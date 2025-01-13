@@ -11,8 +11,8 @@ h1 {
   font-size: 3.2rem;
   background-image: linear-gradient(
     to bottom,
-    rgb(255, 0, 0) 0%,
-    rgb(75, 0, 0) 100%
+    rgb(249, 36, 36) 0%,
+    rgb(255, 0, 0) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -54,16 +54,6 @@ p {
   transition: transform 0.3s ease;
 }
 
-.btn-scopri {
-  background: linear-gradient(135deg, purple, orange);
-  color: white;
-}
-
-.btn-prenota {
-  background: linear-gradient(135deg, orange, red);
-  color: white;
-}
-
 .btn:hover {
   transform: scale(1.05);
 }
@@ -98,7 +88,7 @@ p {
 }
 
 .espositore {
-  background:#64727a;
+  background: #64727a;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -113,16 +103,55 @@ p {
   margin-top: 30px;
 }
 
-.btn-contatta {
-  background: linear-gradient(45deg, red, purple);
+/*button principali*/
+.btn-scopri,
+.btn-prenota {
+  background-color: #ff4500;
   color: white;
-  padding: 15px 30px;
-  text-decoration: none;
+  border: 2px solid #400000;
+  font-family: "Fredroka", cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
   border-radius: 10px;
-  font-weight: bold;
-  transition: transform 0.3s ease;
+}
+.btn:hover {
+  background-color: #ff44009c;
+  transition: all 0.5s ease;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Button Conttataci*/
+
+.btn-contatta {
+  background-color: #ff4500;
+  color: white;
+  border: 2px solid #400000;
+  font-family: "Fredroka", cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  padding: 15px 30px;
+}
 .btn-contatta:hover {
-  transform: scale(1.05);
+  background-color: #ff44009c;
+  transition: all 0.5s ease;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-contatta:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

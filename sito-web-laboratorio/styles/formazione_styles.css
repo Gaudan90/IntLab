@@ -103,7 +103,7 @@ h1 {
   background-image: linear-gradient(
     to bottom,
     rgb(255, 0, 0) 0%,
-    rgb(75, 0, 0) 100%
+    rgb(249, 36, 36) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -115,11 +115,7 @@ h3 {
   font-family: "Unkempt", cursive;
   letter-spacing: 2px;
   font-size: 1.3rem;
-  background-image: linear-gradient(
-    to bottom,
-    #ff4500 0%,
-    rgb(161, 46, 0)
-  );
+  background-image: linear-gradient(to bottom, #ff4500 0%, rgb(161, 46, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

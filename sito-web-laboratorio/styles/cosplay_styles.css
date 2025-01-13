@@ -154,6 +154,15 @@
   margin: 30px 0;
 }
 
+#cosplay-form {
+  width: 90%;
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #64727a;
+  border-radius: 10px;
+}
+
 .biglietto-cosplay {
   background-color: #c4c8ca;
   max-width: 400px;
@@ -166,7 +175,7 @@
   font-family: "Fredroka", cursive;
   font-size: 2rem;
   text-align: center;
-  color: #8b0000;
+  color: #d62000;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -245,7 +254,7 @@ h1 {
   background-image: linear-gradient(
     to bottom,
     rgb(255, 0, 0) 0%,
-    rgb(75, 0, 0) 100%
+    rgb(255, 0, 0) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -276,7 +285,7 @@ h3 {
   background-image: linear-gradient(
     to bottom,
     rgb(255, 72, 0) 0%,
-    rgb(94, 0, 0) 100%
+    rgb(255, 0, 0) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
