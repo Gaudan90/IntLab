@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap");
 
+body {
+  color: rgb(230, 230, 230);
+}
+
 .activity-card p {
   font-size: 1em;
   color: #ddd;
@@ -107,15 +111,14 @@ h1 {
   color: transparent;
 }
 
-h2 {
+h3 {
   font-family: "Unkempt", cursive;
-  text-align: center;
   letter-spacing: 2px;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   background-image: linear-gradient(
     to bottom,
-    rgb(68, 1, 88) 0%,
-    rgb(17, 0, 32) 100%
+    #ff4500 0%,
+    rgb(161, 46, 0)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

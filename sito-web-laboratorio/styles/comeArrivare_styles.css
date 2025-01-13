@@ -1,3 +1,7 @@
+body {
+  color: rgb(230, 230, 230);
+}
+
 .transport-container {
   display: flex;
   flex-direction: column;
@@ -33,12 +37,20 @@
   max-width: 600px;
   margin: 20px 0;
   padding: 20px;
-  background-color: #646566;
+  background-color: #64727a;
+  border: 2px solid #640c00;
   border-radius: 8px;
   opacity: 0;
   height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+}
+
+h3 {
+  font-family: "Unkempt", cursive;
+  font-size: 1.2em;
+  color: #b33000;
+  margin-bottom: 10px;
 }
 
 .transport-info.visible {

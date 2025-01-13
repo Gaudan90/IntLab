@@ -29,7 +29,7 @@ p {
 
 .descrizione-area {
   font-family: "Unkempt", cursive;
-  background: linear-gradient(135deg, #5c2680c2, #d87d15);
+  background: #64727a;
   padding: 30px;
   border-radius: 15px;
   color: #e0e0e0;
@@ -98,14 +98,14 @@ p {
 }
 
 .espositore {
-  background: rgba(250, 209, 155, 0.9);
+  background:#64727a;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
 }
 
 .contatta-box {
-  background: linear-gradient(135deg, purple, orange);
+  background: #64727a;
   color: white;
   padding: 30px;
   text-align: center;

@@ -3,7 +3,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #3e4e21;
+  background-color: #000000;
 }
 
 nav {
@@ -135,7 +135,7 @@ h1 {
 
 .activity-section h2 {
   font-family: "Unkempt", cursive;
-  color: #ffa31a;
+  color: #ff632a;
   font-size: 2em;
   margin-bottom: 15px;
 }
@@ -169,5 +169,5 @@ h1 {
 
 .activity-card:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(255, 163, 26, 0.8);
+  box-shadow: 0 0 15px rgba(150, 23, 1, 0.8);
 }

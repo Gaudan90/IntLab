@@ -18,7 +18,7 @@
 }
 
 .conference-card {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #64727a;
   border: 2px solid #8b0000;
   border-radius: 10px;
   padding: 20px;
@@ -46,7 +46,7 @@
 }
 
 .speaker {
-  color: #ff4500;
+  color: #d62000;
   font-style: italic;
   margin-top: 10px;
 }
@@ -55,7 +55,7 @@
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #64727a;
   border-radius: 10px;
   border: 2px solid #8b0000;
 }
