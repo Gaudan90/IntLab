@@ -7,11 +7,11 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <title>Videogames & Tabletop</title>
-
-    <link rel="stylesheet" href="../styles/videogames_styles.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/theme_style.css" />
     <link rel="stylesheet" href="../styles/navbar_style.css" />
     <link rel="stylesheet" href="../styles/bottombar_styles.css" />
-    <link rel="stylesheet" href="../styles/theme_style.css" />
+    <link rel="stylesheet" href="../styles/videogames_styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
       rel="stylesheet"
@@ -23,40 +23,45 @@
         <nav>
           <ul>
             <li class="dropdown">
-              <a href="#">Home</a>
+              <input type="checkbox" id="dropdown-1" />
+              <label for="dropdown-1">Home</label>
               <div class="dropdown-content">
-                  <a href="home.html">Home</a>
+                <a href="home.html">Home</a>
               </div>
-          </li>
-          <li class="dropdown">
-            <a href="#info">Info</a>
-            <div class="dropdown-content">
-              <a href="./comeArrivare.html">Come arrivare</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#aree">Aree</a>
-            <div class="dropdown-content">
-              <a href="games.html">Games</a>
-              <a href="cosplay.html">Cosplay</a>
-              <a href="conference.html">Conference</a>
-              <a href="areacommerciale.html">Area Commerciale</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#attivita">Attività</a>
-            <div class="dropdown-content">
-              <a href="./formazione_dev.html">Formazione Developers</a>
-              <a href="videogames.html">Videogames & Tabletop</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#social">Contatti</a>
-            <div class="dropdown-content">
-              <a href="contatti.html">Contatti</a>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="dropdown">
+              <input type="checkbox" id="dropdown-2" />
+              <label for="dropdown-2">Info</label>
+              <div class="dropdown-content">
+                <a href="comeArrivare.html">Come arrivare</a>
+              </div>
+            </li>
+            <li class="dropdown">
+                <input type="checkbox" id="dropdown-aree" />
+                <label for="dropdown-aree">Aree</label>
+                <div class="dropdown-content">
+                  <a href="games.html">Games</a>
+                  <a href="cosplay.html">Cosplay</a>
+                  <a href="conference.html">Conference</a>
+                  <a href="areacommerciale.html">Area Commerciale</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <input type="checkbox" id="dropdown-attivita" />
+                <label for="dropdown-attivita">Attività</label>
+                <div class="dropdown-content">
+                  <a href="./formazione_dev.html">Formazione Developers</a>
+                  <a href="videogames.html">Videogames & Tabletop</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <input type="checkbox" id="dropdown-contatti" />
+                <label for="dropdown-contatti">Contatti</label>
+                <div class="dropdown-content">
+                  <a href="contatti.html">Contatti</a>
+                </div>
+              </li>
+          </ul>
       </nav>
     </header>
   <main>

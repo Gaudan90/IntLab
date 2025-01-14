@@ -3,10 +3,11 @@
     <meta charset="utf-8" />
     <title>Come Arrivare</title>
     <meta name="description" content="Come Arrivare" />
-    <link rel="stylesheet" href="../styles/comeArrivare_styles.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/theme_style.css" />
     <link rel="stylesheet" href="../styles/navbar_style.css" />
     <link rel="stylesheet" href="../styles/bottombar_styles.css" />
-    <link rel="stylesheet" href="../styles/theme_style.css" />
+    <link rel="stylesheet" href="../styles/comeArrivare_styles.css" />
     <link rel="icon" href="../assets/icon_gamescon.png" />
 </head>
 <body>
@@ -14,43 +15,49 @@
         <nav>
             <ul>
                 <li class="dropdown">
-                    <a href="#">Home</a>
-                    <div class="dropdown-content">
-                        <a href="home.html">Home</a>
-                    </div>
+                  <input type="checkbox" id="dropdown-1" />
+                  <label for="dropdown-1">Home</label>
+                  <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                  </div>
                 </li>
                 <li class="dropdown">
-                    <a href="#info">Info</a>
-                    <div class="dropdown-content">
-                        <a href="comeArrivare.html">Come arrivare</a>
-                    </div>
+                  <input type="checkbox" id="dropdown-2" />
+                  <label for="dropdown-2">Info</label>
+                  <div class="dropdown-content">
+                    <a href="comeArrivare.html">Come arrivare</a>
+                  </div>
                 </li>
                 <li class="dropdown">
-                    <a href="#aree">Aree</a>
+                    <input type="checkbox" id="dropdown-aree" />
+                    <label for="dropdown-aree">Aree</label>
                     <div class="dropdown-content">
-                        <a href="games.html">Games</a>
-                        <a href="cosplay.html">Cosplay</a>
-                        <a href="conference.html">Conference</a>
-                        <a href="areacommerciale.html">Area Commerciale</a>
+                      <a href="games.html">Games</a>
+                      <a href="cosplay.html">Cosplay</a>
+                      <a href="conference.html">Conference</a>
+                      <a href="areacommerciale.html">Area Commerciale</a>
                     </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#attivita">Attività</a>
+                  </li>
+                  <li class="dropdown">
+                    <input type="checkbox" id="dropdown-attivita" />
+                    <label for="dropdown-attivita">Attività</label>
                     <div class="dropdown-content">
-                        <a href="./formazione_dev.html">Formazione Developers</a>
-                        <a href="videogames.html">Videogames & Tabletop</a>
+                      <a href="./formazione_dev.html">Formazione Developers</a>
+                      <a href="videogames.html">Videogames & Tabletop</a>
                     </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#social">Contatti</a>
+                  </li>
+                  <li class="dropdown">
+                    <input type="checkbox" id="dropdown-contatti" />
+                    <label for="dropdown-contatti">Contatti</label>
                     <div class="dropdown-content">
-                        <a href="contatti.html">Contatti</a>
+                      <a href="contatti.html">Contatti</a>
                     </div>
-                </li>
-            </ul>
+                  </li>
+              </ul>
         </nav>
     </header>
     <main>
+      <div class="main-wrapper">
         <div class="transport-container">
             <div class="transport-options">
                 <img id="busIcon" src="../assets/icon_bus.png" alt="Trasporto con autobus" class="transport-icon">
@@ -61,6 +68,7 @@
                 <img id="mappaEvento" src="../assets/cartina_stupinigi_completa.png" alt="cartina_gamescon">
             </div>
         </div>
+      </div>
     </main>
     <footer>
         <li class="dropdown">

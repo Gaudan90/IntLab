@@ -165,10 +165,12 @@
   gap: 20px;
   color: #fff;
 }
+
 #schedule h2 {
   text-align: center;
   color: rgb(249, 36, 36);
 }
+
 .time {
   font-family: "Unkempt", cursive;
   color: #ff4500;
@@ -185,9 +187,11 @@
   border-radius: 10px;
   border: 2px solid #8b0000;
 }
+
 .registration-container h2 {
   color: #fff;
 }
+
 #game-session-form {
   display: flex;
   flex-direction: column;
@@ -214,6 +218,7 @@
   transition: all 0.3s ease;
   border-radius: 10px;
 }
+
 .submit-btn:hover {
   background-color: #ff44009c;
   transition: all 0.5s ease;
@@ -225,6 +230,7 @@
   transform: translateY(1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 @media screen and (max-width: 768px) {
   .featured-content {
     flex-direction: column;

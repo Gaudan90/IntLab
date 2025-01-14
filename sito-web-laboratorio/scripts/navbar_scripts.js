@@ -1,4 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const checkboxes = document.querySelectorAll('.dropdown input[type="checkbox"]');
+  
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      if (this.checked) {
+        checkboxes.forEach(otherCheckbox => {
+          if (otherCheckbox !== this) {
+            otherCheckbox.checked = false;
+          }
+        });
+      }
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.dropdown')) {
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+      });
+    }
+  });
+
   const galleryItems = document.querySelectorAll(".gallery-item");
   const body = document.body;
 

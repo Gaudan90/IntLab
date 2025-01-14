@@ -1,4 +1,3 @@
-/* Map_Gamescon Style */
 #event_map {
   width: 1000px;
   height: auto;
@@ -14,22 +13,22 @@
     rgb(129, 40, 40) 60%,
     rgba(76, 9, 9, 0) 100%
   );
-
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-
   -webkit-mask-position: center;
   mask-position: center;
-
   -webkit-mask-size: cover;
   mask-size: cover;
 }
 
 #logo {
-  font-size: 100px;
+  text-align: center;
+  font-size: clamp(40px, 8vw, 100px);
   color: rgb(255, 145, 0);
   text-shadow: -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green,
     1px 1px 0 green;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #carousel {
@@ -62,7 +61,6 @@
   position: absolute;
   top: 0;
   left: 0;
-
   mask-image: linear-gradient(
       to right,
       transparent 0%,
@@ -126,16 +124,6 @@
 }
 
 .acquista-btn {
-  background-color: #ff4500;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-family: "Fredoka", cursive;
-  letter-spacing: 1px;
-}
-
-.acquista-btn {
   display: block;
   padding: 10px 20px;
   text-align: center;
@@ -185,52 +173,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#registration-form {
-  width: 90%;
-  max-width: 400px;
-  margin: 1rem auto;
-  padding: 1rem;
-  background-color: #64727a;
-  border-radius: 10px;
-}
-
-#registration-form .form-group {
-  margin-bottom: 10px;
-}
-
-#registration-form input,
-#registration-form select {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-  box-sizing: border-box;
-  font-size: 0.9rem;
-}
-
-.registration-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.image-container img {
-  max-width: 600px;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
 #registration-form input,
 .submit-btn {
   width: 100%;
@@ -250,10 +192,6 @@
   border-radius: 5px;
   background-color: rgb(157, 166, 166);
   font-size: 1rem;
-}
-
-#attivita-select option {
-  padding: 10px;
 }
 
 .submit-btn {
@@ -280,80 +218,46 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#header-image {
+#registration-form {
+  width: 90%;
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #64727a;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
-.header-image-container {
-  max-width: 900px;
+.form-group {
   width: 100%;
+  margin-bottom: 10px;
 }
 
-.header-image-container img {
+#registration-form input,
+#registration-form select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   max-width: 100%;
+  margin: 0 auto;
+}
+
+.image-container img {
+  max-width: 600px;
+  width: 100%;
   height: auto;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 5px;
-    width: auto;
-  }
-
-  .dropdown-content {
-    position: static;
-    background-color: transparent;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    opacity: 1;
-    padding: 5px;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .dropdown-content a {
-    margin: 0 10px;
-    padding: 5px 10px;
-    font-size: 0.9rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 3px;
-  }
-
-  .dates-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .date-circle {
-    margin-bottom: rem;
-  }
-}
-
-@media (hover: hover) {
-  nav ul li:hover > a,
-  nav ul li a:hover {
-    color: rgb(255, 0, 0);
-    transform: scale(1.1);
-  }
-
-  #event_map {
-    width: 50%;
-  }
+  object-fit: contain;
 }
 
 h1 {
@@ -371,6 +275,7 @@ h1 {
   background-clip: text;
   color: transparent;
 }
+
 h2 {
   font-family: "Unkempt", cursive;
   text-align: center;
@@ -380,6 +285,23 @@ h2 {
 hr {
   border: solid #485257;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .dates-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .date-circle {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (hover: hover) {
+  #event_map {
+    width: 50%;
+  }
 }
 
 * {

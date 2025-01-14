@@ -1,0 +1,52 @@
+:root {
+    --primary-font: "Fredoka", cursive;
+    --secondary-font: "Unkempt", cursive;
+    --base-font-size: 16px;
+    --text-color: #ffffff;
+    --accent-color: #ff4500;
+    --border-color: #8b0000;
+    --bg-dark: rgba(0, 0, 0, 0.7);
+  }
+
+  @-moz-document url-prefix() {
+    nav {
+      font-family: var(--primary-font);
+      font-size: var(--base-font-size);
+      -moz-text-size-adjust: none;
+    }
+    
+    nav ul li label,
+    nav ul li a {
+      font-size: var(--base-font-size);
+      font-family: var(--primary-font);
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body nav ul li label,
+body nav ul li a {
+  font-size: var(--base-font-size);
+  font-family: var(--primary-font);
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

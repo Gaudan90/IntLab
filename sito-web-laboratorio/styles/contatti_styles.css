@@ -1,80 +1,138 @@
 body {
   color: aliceblue;
-  align-items: center;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-#registration-form .form-group {
-  margin-bottom: 10px;
-}
-
-#registration-form input,
-#registration-form select {
+#general-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 0 15px;
+  margin: 50px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-  box-sizing: border-box;
-  font-size: 0.9rem;
 }
 
-.registration-container {
-  width: 100%;
+#image-container {
+  flex: 1;
   display: flex;
   justify-content: center;
-  padding: 1rem;
-  box-sizing: border-box;
+  align-items: flex-end;
 }
-#registration-form input,
-.submit-btn {
+
+#image-container img {
   width: 100%;
-  margin: 10px 0;
-  padding: 10px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top center;
 }
 
-h1,
+#content-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-title .title {
+  color: #d62000;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.date {
+  color: #ffa31a;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+.email {
+  color: #ffa31a;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin: 1rem 0;
+}
+
 p {
-  font-family: "Unkempt", cursive;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  line-height: 1.5;
+  margin: 1rem 0;
 }
 
-p {
-  color: aliceblue;
-}
-
-.select-wrapper {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.activity-card p {
-  font-size: 1em;
-  color: #ddd;
-}
 header {
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #3e4e21;
-}
-#event_map {
-  width: 50%;
+  background-color: #000;
 }
 
-.main-title .title {
-  color: #d62000;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center; /* Colore per il primo titolo */
+footer {
+  padding: 1rem;
+  background-color: #000;
+  margin-top: auto;
+  width: 100%;
 }
 
-.date {
-  color: #ffa31a;
-  font-size: 1.5rem; /* Colore per le date */
+footer .social {
+  width: clamp(30px, 5vw, 40px);
+  height: auto;
+  margin: 0 10px;
 }
 
-.email {
-  color: #ffa31a;
-  font-size: 1.5rem; /* Colore per l'email */
+@media screen and (max-width: 768px) {
+  #general-container {
+      flex-direction: column;
+      gap: 15px;
+      margin: 15px auto;
+      padding: 0 15px;
+      align-items: flex-start;
+  }
+
+  #image-container, #content-container {
+      flex: none;
+      width: 100%;
+      max-width: 100%;
+      align-items: flex-start;
+  }
+
+  #image-container {
+      justify-content: center;
+  }
+
+  #image-container img {
+      max-height: 300px;
+      width: auto;
+      object-position: top;
+  }
 }
-p {
-  font-size: 1.5rem;
+
+@media screen and (max-width: 480px) {
+  #general-container {
+      gap: 10px;
+      margin: 10px auto;
+  }
+
+  .main-title .title {
+      margin-bottom: 0.5rem;
+  }
+
+  #image-container img {
+      max-height: 200px;
+  }
+}
+
+@media (hover: none) {
+  footer .social:active {
+      transform: scale(0.95);
+  }
 }
